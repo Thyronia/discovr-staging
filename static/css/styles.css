@@ -1,0 +1,16 @@
+#functionsContainer{
+	position:absolute;
+	top:80px;
+	left:10px;
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	gap:5px;
+	font-family:arial;
+}
+.functionButtons{
+	padding:5px;
+	color:white;
+	background:black;
+	cursor:pointer;
+}
