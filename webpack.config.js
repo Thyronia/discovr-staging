@@ -14,6 +14,11 @@ module.exports = {
   ],
   devServer: {
     static: [path.resolve(__dirname, "static")],
+	headers: {
+		"Access-Control-Allow-Origin": "*",
+		"Access-Control-Allow-Methods": "*",
+		"Access-Control-Allow-Headers": "*"
+	  }
   },
   module: {
     rules: [

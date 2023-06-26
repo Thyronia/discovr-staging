@@ -8,15 +8,60 @@
 	<body>
 		 <matterport-viewer m="cJWwqvZxPpx" application-key="9uk18fuu5yw3tkuc9z22qcx7c"></matterport-viewer>
 	<div id="functionsContainer">
-		<div id="minusScale" class="functionButtons">Scale -</div>
-		<div id="plusScale" class="functionButtons">Scale +</div>
-		<div id="minusX" class="functionButtons">X -</div>
-		<div id="plusX" class="functionButtons">X +</div>
-		<div id="minusY" class="functionButtons">Y -</div>
-		<div id="plusY" class="functionButtons">Y +</div>
-		<div id="minusZ" class="functionButtons">Z -</div>
-		<div id="plusZ" class="functionButtons">Z +</div>
-		<div id="reset" class="functionButtons">Reset</div>
+		<div id="addObject" data-scale='0.05' data-url='http://localhost:8080/models/redCube.fbx' class="functionButtons">Add cube</div>
+		<div id="addObject" data-scale='0.025' data-url='http://localhost:8080/models/table.fbx' class="functionButtons">Add table</div>
+		<div id="addObject" data-scale='0.025' data-url='http://localhost:8080/models/chair.fbx' class="functionButtons">Add chair</div>
+		<div id="selectedFunctions">
+			<p id="currentSelection">Currently selected :<span id="selectedID"></span></p>
+			<div class="axisContainer">
+				<p class="axis">Scale :</p>
+				<div id="plusScale" class="functionButtons plusMoins">+</div>
+				<div id="minusScale" class="functionButtons plusMoins">-</div>
+				<input class="stepInput"id="scaleStep" type="number" step="0.01"/>
+			</div>
+			<p class="axis">Position :</p>
+			<div class="axisContainer">
+				<p class="axis">X :</p>
+				<input class="stepInput"id="xStep" type="number" step="0.1"/>
+				<div id="plusX" class="functionButtons plusMoins">+</div>
+				<div id="minusX" class="functionButtons plusMoins">-</div>
+			</div>
+			<div class="axisContainer">
+				<p class="axis">Y :</p>
+				<input class="stepInput"id="yStep" type="number" step="0.1"/>
+				<div id="plusY" class="functionButtons plusMoins">+</div>
+				<div id="minusY" class="functionButtons plusMoins">-</div>
+			</div>
+			<div class="axisContainer">
+				<p class="axis">Z :</p>
+				<input class="stepInput" id="zStep" type="number" step="0.1"/>
+				<div id="plusZ" class="functionButtons plusMoins">+</div>
+				<div id="minusZ" class="functionButtons plusMoins">-</div>
+			</div>
+			<p class="axis">Rotation :</p>
+			<div class="axisContainer">
+				<p class="axis">X :</p>
+				<input class="stepInput"id="xStepRot" type="number" step="0.1"/>
+				<div id="plusXRot" class="functionButtons plusMoins">+</div>
+				<div id="minusXRot" class="functionButtons plusMoins">-</div>
+			</div>
+			<div class="axisContainer">
+				<p class="axis">Y :</p>
+				<input class="stepInput"id="yStepRot" type="number" step="0.1"/>
+				<div id="plusYRot" class="functionButtons plusMoins">+</div>
+				<div id="minusYRot" class="functionButtons plusMoins">-</div>
+			</div>
+			<div class="axisContainer">
+				<p class="axis">Z :</p>
+				<input class="stepInput" id="zStepRot" type="number" step="0.1"/>
+				<div id="plusZRot" class="functionButtons plusMoins">+</div>
+				<div id="minusZRot" class="functionButtons plusMoins">-</div>
+			</div>
+			
+			<div id="reset" class="functionButtons">Reset</div>
+			<div style="display:none" id="cam" class="functionButtons">Camera pos</div>
+		</div>
 	</div>
+	<div id="objectsList"></div>
 	</body>
  </html>

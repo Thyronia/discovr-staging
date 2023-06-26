@@ -7,10 +7,47 @@
 	flex-wrap:nowrap;
 	gap:5px;
 	font-family:arial;
+	background-color:rgba(0,0,0,0.3);
+	color:white;
+	padding:10px;
+}
+#selectedFunctions{
+	display:none;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	gap:5px;
+	font-family:arial;
 }
 .functionButtons{
 	padding:5px;
 	color:white;
-	background:black;
+	background:rgba(0,0,0,0.6);
 	cursor:pointer;
+}
+.functionButtons:hover{
+	background:rgba(0,0,0,1);
+}
+.axisContainer{
+	display:flex;
+	flex-direction:row;
+	gap:5px;
+	align-items:center;
+}
+.axis{
+	margin:0;
+	font-weight:bold;
+}
+.plusMoins{
+	width:20px;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	font-weight:bold;
+}
+#currentSelection{
+	margin-top:5px 0 0 0;
+}
+.stepInput{
+	height:30px;
+	width:70px;
 }
