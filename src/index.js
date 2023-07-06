@@ -1,5 +1,5 @@
 import '@matterport/webcomponent';
-import 'css/styles.css';
+import '../static/css/styles.css';
 
 const main = async () => {
 	const sdk = await document.querySelector('matterport-viewer').playingPromise;
