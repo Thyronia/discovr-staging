@@ -2,7 +2,6 @@ import '@matterport/webcomponent';
 import '../static/css/styles.css';
 
 const main = async () => {
-	console.clear();
 	const sdk = await document.querySelector('matterport-viewer').playingPromise;
 	var [ sceneObject ] = await sdk.Scene.createObjects(1);
 
