@@ -19,7 +19,7 @@ module.exports = {
 	})
   ],
   devServer: {
-    static: [path.resolve(__dirname, "static")],
+    static: [path.resolve(__dirname, "src/static")],
 	headers: {
 		"Access-Control-Allow-Origin": "*",
 		"Access-Control-Allow-Methods": "*",
