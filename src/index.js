@@ -1,5 +1,5 @@
 import '@matterport/webcomponent';
-import '../static/css/styles.css';
+import './static/css/styles.css';
 
 const main = async () => {
 	const sdk = await document.querySelector('matterport-viewer').playingPromise;
@@ -18,7 +18,7 @@ const main = async () => {
 		currentlySelectedObject = object;
 		document.getElementById("selectedID").innerHTML = object.id;
 		document.getElementById("selectedFunctions").style.display = 'flex';
-		object.inputs.materialUrl = "materials/yellow.jpg";
+		object.inputs.materialUrl = "static/materials/yellow.jpg";
 	}
 	
 	function populateInputs(object){
