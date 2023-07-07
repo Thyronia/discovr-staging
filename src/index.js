@@ -18,7 +18,7 @@ const main = async () => {
 		currentlySelectedObject = object;
 		document.getElementById("selectedID").innerHTML = object.id;
 		document.getElementById("selectedFunctions").style.display = 'flex';
-		object.inputs.materialUrl = "static/materials/yellow.jpg";
+		object.inputs.materialUrl = "materials/yellow.jpg";
 	}
 	
 	function populateInputs(object){
